@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { SingleSubscription, FamilySubscription } from '../types';
 
-const API_BASE = 'https://copy-submanager.onrender.com/';
+const API_BASE = 'https://copy-submanager-b7ju.vercel.app';
 
 interface ApiResponse<T> {
   data?: T;
