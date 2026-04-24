@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { SingleSubscription, FamilySubscription } from '../types';
 
-const API_BASE = 'http://localhost:5000';
+const API_BASE = 'https://copy-submanager.onrender.com/';
 
 interface ApiResponse<T> {
   data?: T;

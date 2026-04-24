@@ -192,7 +192,7 @@ export default function App() {
   const handleRestore = async (restoredSingles: SingleSubscription[], restoredFamilies: FamilySubscription[]) => {
     // Import data to server
     try {
-      const response = await fetch('http://localhost:5000/import-data', {
+      const response = await fetch('https://copy-submanager.onrender.com//import-data', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -242,7 +242,7 @@ export default function App() {
         const data = JSON.parse(event.target?.result as string);
         
         // Import to server
-        const response = await fetch('http://localhost:5000/import-data', {
+        const response = await fetch('https://copy-submanager.onrender.com//import-data', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
